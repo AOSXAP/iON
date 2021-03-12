@@ -57,8 +57,7 @@ client.on('message', msg => {
 	}
 });
 
-distube
-	.on('playSong', (message, queue, song) =>
+distube.on('playSong', (message, queue, song) =>
 		message.channel.send(
 			`Piesa: \`${song.name}\` - \`${song.formattedDuration}\` Ceruta de: ${
 				song.user
